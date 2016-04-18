@@ -1,0 +1,33 @@
+extends layout
+
+block content
+  div.thanks-modal
+    .thanks-modal-content(tabindex="-1")
+      h1 Thanks!
+      a.modal-close-button Define another word
+  div.header
+    img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4730/money-dic.png")
+  form.definition-form(action="https://docs.google.com/a/ideo.org/forms/d/1QMqvhXtvhPFpzOu8ZT_bd5P40glbBYlJ3NKKx-E03bo/formResponse")
+    div.content
+      p Define, or use in a sentence
+      h2.define-word Fiduciary
+      textarea(placeholder="What does this mean to you?" row="10" name="entry.736958868" id="entry_736958868" class="definition")
+
+    div.text-center
+      p How does it make you feel?
+      input.submit-button#yay-button(type="radio" value="Yay" name="entry.277451473")
+      label(for="yay-button")
+      input.submit-button#meh-button(type="radio" value="Meh" name="entry.277451473")
+      label(for="meh-button")
+      input.submit-button#wamp-button(type="radio" value="Wamp" name="entry.277451473")
+      label(for="wamp-button")
+
+  div.logo
+    p Brought to you by
+    img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4730/ideo-logo.png" width="300px")
+    p.small
+      | We appreciate your support! Content submitted may potentially be used in print or online at
+      a(href="http://dictionary.money") dictionary.money
+      | . By contributing to this project, you grant
+      a(href="http://ideo.org") IDEO.org
+      | the right to communicate, host, distribute, make modifications, publicly display, publish, and improve submitted content.

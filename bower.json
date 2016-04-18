@@ -1,0 +1,24 @@
+{
+  "name": "dictionary-money",
+  "description": "An urban dictionary for finances",
+  "main": "app.js",
+  "authors": [
+    "Madelin Woods <madelinw@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/madelinw/dictionary-money",
+  "moduleType": [
+    "node"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "https://github.com/twbs/bootstrap-sass.git#master"
+  }
+}

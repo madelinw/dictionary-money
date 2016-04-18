@@ -1,0 +1,131 @@
+@import 'bootstrap'
+
+$watermelon: #f88379
+$watermelon-dark: darken($watermelon, 10%)
+$white: #ffffff
+$serif-font-family: Georgia, serif
+$sans-serif-font-family: Helvetica, Arial, sans-serif
+$body-font-size: 18px
+$body-line-height: 24px
+$margin: 50px
+
+body
+  font-family: $serif-font-family
+  color: $white
+  font-size: $body-font-size
+  line-height: $body-line-height
+  background: $watermelon
+a
+  color: $white
+.header
+  text-align: center
+  margin: $margin 0
+  transform: rotate(3deg)
+.logo
+  margin: ($margin*3) 0
+  text-align: center
+  img
+    transform: rotate(3deg)
+p
+  font-style: italic
+.definition-form
+  position: relative
+  width: 500px
+  margin: $margin auto
+  padding-top: $margin
+  &:before
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4730/circle.png')
+    background-repeat: no-repeat
+    background-size: 100%
+    content: ''
+    display: block
+    position: absolute
+    top: -70px
+    left: -125px
+    width: 700px
+    height: 900px
+    pointer-events: none
+
+h2
+  text-transform: uppercase
+  font-family: $sans-serif-font-family
+  font-size: 52px
+  letter-spacing: 3px
+  line-height: 48px
+  margin: 0
+  font-weight: bold
+
+textarea
+  margin-top: 20px
+  margin-bottom: 30px
+  width: 100%
+  border: 2px solid $white
+  border-radius: 10px
+  padding: 10px
+  color: black
+  outline: none
+  transition: border .2s ease
+  &:focus
+    border: 2px solid $watermelon-dark
+.submit-button
+  display: none
+.submit-button + label
+  width: 100px
+  height: 120px
+  border: none
+  margin: 20px
+  opacity: 1
+  transition: opacity .2s ease
+  outline: none
+  cursor: pointer
+  &:hover
+    opacity: .5
+
+#yay-button + label
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4730/yay2.png') no-repeat
+  background-size: 110%
+#meh-button + label
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4730/meh2.png') no-repeat
+  background-size: 100%
+#wamp-button + label
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4730/wamp2.png') no-repeat
+  background-size: 85%
+
+.thanks-modal
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  width: 100%
+  height: 100%
+  background: rgba($watermelon-dark, .9)
+  z-index: 99
+  display: none
+  align-items: center
+  justify-content: center
+.show-modal
+  display: flex
+.thanks-modal-content
+  max-width: 50%
+  text-align: center
+  outline: none
+.modal-close-button
+  color: white
+  font-family: $sans-serif-font-family
+  border: 3px solid $watermelon
+  padding: 10px
+  border-radius: 5px
+  cursor: pointer
+  margin-top: 20px
+  display: block
+  &:hover
+    color: white
+    background-color: rgba(255,255,255,.3)
+    border: 3px solid darken($watermelon, 2%)
+    text-decoration: none
+p.small
+  width: 550px
+  margin: 30px auto 0
+  font-size: 12px
+  line-height: 16px
